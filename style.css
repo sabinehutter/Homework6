@@ -1,0 +1,12 @@
+
+.page-header{
+    color: white;
+    justify-content: center;
+    text-align: center;
+    background-color: #3D4849;
+    height: 4.5rem;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+h1{
+    padding-top : 15px;
+}
