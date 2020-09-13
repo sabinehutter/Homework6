@@ -1,12 +1,41 @@
-
-.page-header{
+.title {
     color: white;
     justify-content: center;
     text-align: center;
-    background-color: #3D4849;
-    height: 4.5rem;
     font-family: 'Kumbh Sans', sans-serif;
+    font-size: x-large;
 }
-h1{
-    padding-top : 15px;
+
+.master-row {
+    height: 100%;
+}
+
+.div1 {
+    background-color: black;
+}
+
+.div2 {
+    background-color: pink;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
 }
