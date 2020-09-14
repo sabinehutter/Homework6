@@ -13,6 +13,7 @@
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -28,17 +29,15 @@
         <div class="row master-row">
             <aside class="col-lg-3 bg-light">
                 <p> Enter a City to Search</p>
-                <input type="text" placeholder="Search.." name="search">
+                <input type="text" placeholder="Search.." name="search" class="searchInput"></input>
                 <button type="submit"><i class="fa fa-search searchBtn"></i></button>
 
 
 
             </aside>
             <main class="col-lg-9 bg-light">
-                <div class="row mt-3" id = "today">
-                    Hola
-                </div>
-                <div class="row mt-3" id = "forecastt">Hola 2</div>
+                <div class="row mt-3" id = "today"></div>
+                <div class="row mt-3" id = "forecast">Hola 2</div>
             </main>
 
         </div>

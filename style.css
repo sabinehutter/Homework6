@@ -39,3 +39,11 @@ form.example button {
     /* Prevent double borders */
     cursor: pointer;
 }
+#wicon{
+    height: 40px;
+    width: 40px;
+    display: block-inline;
+}
+.current-city{
+    display: block-inline;
+}
