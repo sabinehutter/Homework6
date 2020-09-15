@@ -27,17 +27,18 @@
 
     <div class="container-fluid main-content mh-100">
         <div class="row master-row">
-            <aside class="col-lg-3 bg-light">
+            <aside class="col-3 col-md-3 bg-light">
                 <p> Enter a City to Search</p>
                 <input type="text" placeholder="Search.." name="search" class="searchInput"></input>
                 <button type="submit"><i class="fa fa-search searchBtn"></i></button>
 
-
+                <ul class="list-group search-history"></ul>
 
             </aside>
-            <main class="col-lg-9 bg-light">
-                <div class="row mt-3" id = "today"></div>
-                <div class="row mt-3" id = "forecast">Hola 2</div>
+            <main class=" maindiv col-9 col-md-9 bg-light disappear">
+                <div class="card row mt-3" id = "today"></div>
+                <div class=" card row mt-3" id = "forecast">
+                </div>
             </main>
 
         </div>

@@ -47,3 +47,25 @@ form.example button {
 .current-city{
     display: block-inline;
 }
+.good-uv{
+    background-color: green;
+}
+.moderate-uv{
+    background-color: yellow;
+}
+.severe-uv{
+    background-color: red;
+}
+.disappear{
+    display : none;
+}
+.show{
+    display: show;
+}
+.forecast{
+    background-color: #007BFF !important;
+    color: white;
+}
+.card-text{
+    padding-bottom: 2px !important;
+}
