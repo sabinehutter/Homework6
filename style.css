@@ -69,3 +69,10 @@ form.example button {
 .card-text{
     padding-bottom: 2px !important;
 }
+#forecastcard{
+    display: inline-block;
+    margin: 2px;
+}
+#forecast{
+    display: inline-block;
+}

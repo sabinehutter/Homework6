@@ -121,7 +121,7 @@ function getExpectedForecast(lat, lon) {
             var shortStartDate = month + "/" + day + "/" + year;
 
 
-            var newDivCard = $("<div class='card forecast avoid' style='width: 10rem;'><div class='card-body'> </div></div>");
+            var newDivCard = $("<div class='card forecast avoid' id ='forecastcard' style='width: 10rem;'><div class='card-body'> </div></div>");
 
 
 
