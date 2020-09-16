@@ -18,7 +18,7 @@ function searchWeather(city) {
 
     // call api 
     var apiKey = "2644d35b2adfcc8bc5136b634f1b23fb";
-    var weatherURL = "http://api.openweathermap.org/data/2.5/weather?q=";
+    var weatherURL = "https://api.openweathermap.org/data/2.5/weather?q=";
 
 
     var queryURL = weatherURL + city + "&appid=" + apiKey + "&units=imperial";
@@ -46,7 +46,7 @@ function searchWeather(city) {
         var year = convertedDate.getFullYear();
         var shortStartDate = month + "/" + day + "/" + year;
         $(".current-city").append(($("<h3 class = 'card-title current-cityhd col-12'></h3>")).text((results.name) + ' ' + "(" + shortStartDate + ")"));
-        $(".current-city").append(($("<img id='wicon'" + "src='http://openweathermap.org/img/w/" + results.weather[0].icon + ".png'" + "alt='Weather icon'>")))
+        $(".current-city").append(($("<img id='wicon'" + "src='https://openweathermap.org/img/w/" + results.weather[0].icon + ".png'" + "alt='Weather icon'>")))
         // call get forecast
         $(".current-city").append($("<p class='card-text'></p>").text("Temperature: " + results.main.temp + " °F"))
         $(".current-city").append($("<p class='card-text'></p>").text("Humidity: " + results.main.humidity + " %"))
@@ -64,7 +64,7 @@ function searchWeather(city) {
 // call get uv index
 function getUVIndex(lat, lon) {
     var apiKey = "appid=2644d35b2adfcc8bc5136b634f1b23fb";
-    var weatherURL = "http://api.openweathermap.org/data/2.5/uvi?";
+    var weatherURL = "https://api.openweathermap.org/data/2.5/uvi?";
     var lat = "&lat=" + lat;
     var lon = "&lon=" + lon;
 
@@ -126,7 +126,7 @@ function getExpectedForecast(lat, lon) {
 
 
             newDivCard.append("<h5 class='card-title'>" + shortStartDate + "</h5>")
-            newDivCard.append(($("<img id='wicon'" + "src='http://openweathermap.org/img/w/" + response.daily[i].weather[0].icon + ".png'" + "alt='Weather icon'>")))
+            newDivCard.append(($("<img id='wicon'" + "src='https://openweathermap.org/img/w/" + response.daily[i].weather[0].icon + ".png'" + "alt='Weather icon'>")))
             newDivCard.append($("<p class='card-text'></p>").text("Temperature: " + response.daily[i].temp.day + " °F"))
             newDivCard.append($("<p class='card-text'></p>").text("Humidity: " + response.daily[i].humidity + " %"))
 
