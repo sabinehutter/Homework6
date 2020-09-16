@@ -78,14 +78,14 @@ function getUVIndex(lat, lon) {
         // get results
         var results = response;
 
-        $(".current-city").append($("<p class='card-text uv-index'></p>").text("UV Index: " + results.value))
-
+        $(".current-city").append($("<p class='card-text uv-index'></p>").text("UV Index: "))
+        $(".uv-index").append($("<button class='card-text uv-index-number'></button>").text(results.value))
         if (results.value < 3) {
-            $(".uv-index").addClass("good-uv");
+            $(".uv-index-number").addClass("good-uv");
         } else if (results.value > 3 && results.value < 6) {
-            $(".uv-index").addClass("moderate-uv");
+            $(".uv-index-number").addClass("moderate-uv");
         } else if (results.value > 6) {
-            $(".uv-index").addClass("severe-uv");
+            $(".uv-index-number").addClass("severe-uv");
         }
     })
 
