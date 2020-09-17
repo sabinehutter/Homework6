@@ -171,6 +171,12 @@ function addToHistory(cityname) {
 
 $(document).ready(function () {
     // first - click events 
+    var searchHistory = JSON.parse(localStorage.getItem("history")) || [];
+
+    for (cityname in searchHistory){
+        $(".search-history").append("<li class = list-group-item searched-city>" + searchHistory[cityname] + "</li>")
+    }
+
     $(".searchBtn").on("click", function () {
         $(".maindiv").removeClass("disappear");
         $("#forecast").empty();
